@@ -1,8 +1,11 @@
-const Index = () => (
-    <div>
-      <p>Hello Next.js</p>
-    </div>
-  );
-  
-  export default Index;
-  
+import Layout from "../components/Layout";
+
+export default function Index() {
+    return(
+        <Layout>
+            <p>
+                The <strong>New</strong> heathblandford.com
+            </p>
+        </Layout>
+    );
+}
