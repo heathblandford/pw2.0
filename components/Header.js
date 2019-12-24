@@ -1,20 +1,25 @@
 import Link from 'next/link';
 
-const linkStyle = {
-  marginRight: 15
-};
-
 const Header = () => (
-  <div>
+  <div className="headerMain">
     <Link href="/">
-      <a style={linkStyle}>Home</a>
+      <a>Home</a>
     </Link>
     <Link href="/projects">
-      <a style={linkStyle}>Projects</a>
+      <a>Projects</a>
     </Link>
     <Link href="/contact">
-      <a style={linkStyle}>Contact Me</a>
+      <a>Contact Me</a>
     </Link>
+    <style global jsx>{`
+      .headerMain{
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      a {
+        margin-right: 15px;
+      }
+    `}</style>
   </div>
 );
 

@@ -22,7 +22,7 @@ export default function Index() {
                             id="good-me"
                         />
                     </div>
-                    <div className="">
+                    <div className="info">
                         <p>
                             This is me. I'm me. I'm definitely me. I really am
                             just filling this out so that when I'm able, I can
@@ -43,15 +43,7 @@ export default function Index() {
                 </div>
 
                 <div className="something container">
-                    <div>
-                        <img
-                            src="/yung-me.jpg"
-                            alt="young me"
-                            id="young-me"
-                            className=""
-                        />
-                    </div>
-                    <div className="">
+                    <div className="info">
                         <p>
                             This is me. I'm me. I'm definitely me. I really am
                             just filling this out so that when I'm able, I can
@@ -69,6 +61,14 @@ export default function Index() {
                             <li>Oh, and here's one last thing about me!</li>
                         </ul>
                     </div>
+                    <div>
+                        <img
+                            src="/yung-me.jpg"
+                            alt="young me"
+                            id="young-me"
+                            className=""
+                        />
+                    </div>
                 </div>
 
                 <div className="other-something container">
@@ -80,7 +80,7 @@ export default function Index() {
                             className=""
                         />
                     </div>
-                    <div className="">
+                    <div className="info">
                         <p>
                             This is me. I'm me. I'm definitely me. I really am
                             just filling this out so that when I'm able, I can
@@ -101,7 +101,7 @@ export default function Index() {
                 </div>
             </div>
 
-            <style jsx>{`
+            <style global jsx>{`
                 .flex-container {
                     display: flex;
                     flex-flow: row wrap;
@@ -111,13 +111,25 @@ export default function Index() {
                     flex-flow: row no-wrap;
                     justify-content: space-around;
                 }
+                .info {
+                    margin: 25px;
+                }
+                .quik-about {
+                    padding-bottom: 50px;
+                }
                 #good-me {
                     height: 400px;
                     min-width: 600px;
                 }
+                .something {
+                    padding: 50px 0px;
+                }
                 #young-me {
                     height: 400px;
                     min-width: 600px;
+                }
+                .other-something {
+                    padding-top: 75px;
                 }
                 #walking-me {
                     height: 400px;
@@ -139,6 +151,9 @@ export default function Index() {
                         height: 200px;
                         width: 300px;
                     }
+                }
+                body {
+                    background: #ddd;
                 }
             `}</style>
         </Layout>
