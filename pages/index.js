@@ -153,7 +153,7 @@ export default function Index() {
                     }
                 }
                 body {
-                    background: #ddd;
+                    // background: #ddd;
                 }
             `}</style>
         </Layout>
