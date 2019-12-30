@@ -13,8 +13,8 @@ export default function Index() {
                     content="initial-scale=1.0, width=device-width"
                 />
             </Head>
-            <div className="flex-container">
-                <div className="quik-about container">
+            <div className="flex-container aboutMe">
+                <div className="quik-about container info-card">
                     <div className="">
                         <img
                             src="/good-me.jpg"
@@ -42,7 +42,7 @@ export default function Index() {
                     </div>
                 </div>
 
-                <div className="something container">
+                <div className="something container info-card">
                     <div className="info">
                         <p>
                             This is me. I'm me. I'm definitely me. I really am
@@ -71,7 +71,7 @@ export default function Index() {
                     </div>
                 </div>
 
-                <div className="other-something container">
+                <div className="other-something container info-card">
                     <div>
                         <img
                             src="/walkin-me.jpg"
@@ -105,35 +105,40 @@ export default function Index() {
                 .flex-container {
                     display: flex;
                     flex-flow: row wrap;
+                    justify-content: center;
                 }
                 .container {
                     display: flex;
                     flex-flow: row no-wrap;
-                    justify-content: space-around;
+                    margin: 50px;
+                    // -webkit-box-shadow: 3px 3px 5px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+                    // -moz-box-shadow: 3px 3px 5px 6px #ccc; /* Firefox 3.5 - 3.6 */
+                    // box-shadow: 3px 3px 5px 6px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+                    border-radius: 5px;
+                }
+                .aboutMe {
+                    padding: 25px;
+                }
+                .info-card {
+                    background: white;
                 }
                 .info {
                     margin: 25px;
                 }
-                .quik-about {
-                    padding-bottom: 50px;
-                }
                 #good-me {
                     height: 400px;
                     min-width: 600px;
-                }
-                .something {
-                    padding: 50px 0px;
+                    border-radius: 5px;
                 }
                 #young-me {
                     height: 400px;
                     min-width: 600px;
-                }
-                .other-something {
-                    padding-top: 75px;
+                    border-radius: 5px;
                 }
                 #walking-me {
                     height: 400px;
                     min-width: 600px;
+                    border-radius: 5px;
                 }
                 @media (max-width: 950px) {
                     .container {
@@ -153,7 +158,12 @@ export default function Index() {
                     }
                 }
                 body {
-                    // background: #ddd;
+                    background: rgb(0, 0, 0);
+                    background: linear-gradient(
+                        45deg,
+                        rgba(0, 0, 0, 1) 0%,
+                        rgba(255, 255, 255, 1) 100%
+                    );
                 }
             `}</style>
         </Layout>
