@@ -44,6 +44,7 @@ export default function docs() {
         req.setRequestHeader("Content-Type", "application/json");
         req.send(JSON.stringify(data));
     }
+
     return (
         <Layout>
             <Head>
@@ -52,13 +53,13 @@ export default function docs() {
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
                 />
+                 
             </Head>
-            <h1 className="title">Contact Me!</h1>
+            <h1 className="title">Get in Touch</h1>
             <div className="container">
                 <div className="contact-para">
                     <p>
-                        The best way to contact me is probably{" "}
-                        <a href="https://twitter.com/whoisheath_">Twitter</a>.
+                        The best way to contact me is{" "}<a href="https://twitter.com/whoisheath_">Twitter</a>.
                         But, if you fill out the form, a notification will go
                         off in my own discord server and I'll get back to you as
                         quickly as possible!
@@ -73,7 +74,7 @@ export default function docs() {
                         name="contactMeForm"
                         id="contactMeForm"
                     >
-                        Name:
+                        <label for="firstname">Your Name</label>
                         <br />
                         <input
                             id="name"
@@ -83,7 +84,7 @@ export default function docs() {
                             autoFocus
                         />
                         <br />
-                        Email:
+                        <label for="email">Email</label>
                         <br />
                         <input
                             id="email"
@@ -92,9 +93,10 @@ export default function docs() {
                             placeholder="heath.blandford@gmail.com"
                         />
                         <br />
-                        Message:
+                        <label for="message">Message</label>
                         <br />
                         <textarea
+                            name="message"
                             id="message"
                             rows="10"
                             cols="50"
@@ -103,14 +105,32 @@ export default function docs() {
                         <br />
                         <button type="submit">Contact Me</button>
                     </form>
+                    <div className="bottom-socials">
+                        <a href="https://www.twitter.com/whoisheath_">
+                            <img src="twitter.svg" alt="twitter" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/heathblandford">
+                            <img src="linkedin.svg" alt="twitter" />
+                        </a>
+                        <a href="https://www.github.com/heathblandford">
+                            <img src="github.svg" alt="twitter" />
+                        </a>
+                        <a href="https://www.last.fm/user/cloolis">
+                            <img src="lastfm.svg" alt="twitter" />
+                        </a>
+                        <a href="https://www.instagram.com/whoisheath_">
+                            <img src="instagram.svg" alt="twitter" />
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <style jsx>
                 {`
                     .title {
-                        font-size: 4em;
+                        font-size: 3.5em;
                         text-align: center;
+                        font-family: 'Roboto', sans-serif;
                     }
                     .container {
                         display: flex;
@@ -119,12 +139,20 @@ export default function docs() {
                         padding: 0px 25px;
                     }
                     .contact-para {
-                        font-size: 1.3em;
+                        font-size: 1.2em;
+                        font-family: 'Roboto', sans-serif;
                         margin: 50px auto;
                         border-bottom: 2px solid black;
                     }
                     .contact-form {
                         margin: 50px auto;
+                        border-radius: 2px;
+                        padding: 75px;
+                        box-shadow: 2px 2px 5px #333;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    .contact-form form {
+                        margin-bottom: 75px;
                     }
                     .contact-form input[type="text"] {
                         margin-bottom: 10px;
@@ -144,11 +172,26 @@ export default function docs() {
                     }
                     .contact-form textarea {
                         padding: 10px 5px;
+                        font-family: 'Roboto', sans-serif;
                     }
                     .contact-form textarea:focus {
                         outline: none;
                     }
+                    .bottom-socials {
+                        text-align: center;
+                        grid-area: bot;
+                        justify-self: stretch;
+                        width: 100%;
+                    }
+                    .bottom-socials img {
+                        height: 50px;
+                        width: 50px;
+                        padding: 10px;
+                    }
                     @media (max-width: 950px) {
+                        .contact-form {
+                            padding: 50px;
+                        }
                         .contact-form textarea {
                             width: 200px;
                         }

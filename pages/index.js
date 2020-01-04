@@ -12,10 +12,15 @@ export default function Index() {
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
                 />
+                <link
+                    href="https://fonts.googleapis.com/css?family=Roboto"
+                    rel="stylesheet"
+                />
             </Head>
+            <h1 className="main-title">Hey👋 I'm Heath!</h1>
             <div className="flex-container aboutMe">
                 <div className="quik-about container info-card">
-                    <div className="">
+                    <div className="image">
                         <img
                             src="/good-me.jpg"
                             alt="a nice picture of me"
@@ -24,137 +29,154 @@ export default function Index() {
                     </div>
                     <div className="info">
                         <p>
-                            This is me. I'm me. I'm definitely me. I really am
-                            just filling this out so that when I'm able, I can
-                            actually fill this will real info.
+                            I'm a Petroleum Engineer by education (B.S. in
+                            Petroluem Engineering from Marietta College in 2016){" "}
+                            <br />
+                            <br />A Mechanical Design Engineer by Profession{" "}
+                            <br />
+                            <br /> And a Web Developer by Passion.
                         </p>
-                        <p>
-                            Here is some more content. I really just want to be
-                            able to see if I can figure out Flexbox tonight.
-                            That seems like a hard task, but I'm up to the
-                            challenge!
-                        </p>
+                        <p>In my free time, I like to do a few things:</p>
                         <ul>
-                            <li>Here's one thing about me</li>
-                            <li>Here's another thing about me</li>
-                            <li>Oh, and here's one last thing about me!</li>
+                            <li>3D Print</li>
+                            <li>
+                                Play video games (although I'm pretty bad at
+                                most of them)
+                            </li>
+                            <li>Cook</li>
                         </ul>
-                    </div>
-                </div>
+                        <p>📍 Currently in: Cincinnati, OH</p>
 
-                <div className="something container info-card">
-                    <div className="info">
-                        <p>
-                            This is me. I'm me. I'm definitely me. I really am
-                            just filling this out so that when I'm able, I can
-                            actually fill this will real info.
-                        </p>
-                        <p>
-                            Here is some more content. I really just want to be
-                            able to see if I can figure out Flexbox tonight.
-                            That seems like a hard task, but I'm up to the
-                            challenge!
-                        </p>
+                        <p>Things I love:</p>
                         <ul>
-                            <li>Here's one thing about me</li>
-                            <li>Here's another thing about me</li>
-                            <li>Oh, and here's one last thing about me!</li>
+                            <li>JavaScript</li>
+                            <li>NodeJS</li>
+                            <li>Consumer Technology</li>
+                            <li>Hip Hop and House music</li>
+                            <li>Keyboards</li>
                         </ul>
                     </div>
-                    <div>
-                        <img
-                            src="/yung-me.jpg"
-                            alt="young me"
-                            id="young-me"
-                            className=""
-                        />
-                    </div>
-                </div>
-
-                <div className="other-something container info-card">
-                    <div>
-                        <img
-                            src="/walkin-me.jpg"
-                            alt="walking me"
-                            id="walking-me"
-                            className=""
-                        />
-                    </div>
-                    <div className="info">
-                        <p>
-                            This is me. I'm me. I'm definitely me. I really am
-                            just filling this out so that when I'm able, I can
-                            actually fill this will real info.
-                        </p>
-                        <p>
-                            Here is some more content. I really just want to be
-                            able to see if I can figure out Flexbox tonight.
-                            That seems like a hard task, but I'm up to the
-                            challenge!
-                        </p>
-                        <ul>
-                            <li>Here's one thing about me</li>
-                            <li>Here's another thing about me</li>
-                            <li>Oh, and here's one last thing about me!</li>
-                        </ul>
+                    <div className="bottom-socials">
+                        <a href="https://www.twitter.com/whoisheath_">
+                            <img src="twitter.svg" alt="twitter" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/heathblandford">
+                            <img src="linkedin.svg" alt="twitter" />
+                        </a>
+                        <a href="https://www.github.com/heathblandford">
+                            <img src="github.svg" alt="twitter" />
+                        </a>
+                        <a href="https://www.last.fm/user/cloolis">
+                            <img src="lastfm.svg" alt="twitter" />
+                        </a>
+                        <a href="https://www.instagram.com/whoisheath_">
+                            <img src="instagram.svg" alt="twitter" />
+                        </a>
                     </div>
                 </div>
             </div>
 
             <style global jsx>{`
+                .main-title {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 3.5em;
+                    text-align: center;
+                }
                 .flex-container {
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: center;
                 }
                 .container {
-                    display: flex;
-                    flex-flow: row no-wrap;
-                    padding: 50px;                
-                    justify-content: center;
-                    width: 100vw
+                    box-shadow: 2px 2px 5px #333;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 90% 100px;
+                    grid-template-areas:
+                        "top top"
+                        "bot bot";
+                    padding: 50px;
+                    width: 50vw;
+                    min-height: 500px;
+                    margin: 20px;
+                }
+                .image > img {
+                    object-fit: cover;
+                    width: 100%;
+                    max-height: 100%;
+                }
+                .bottom-socials {
+                    text-align: center;
+                    grid-area: bot;
+                    justify-self: stretch;
+                    align-self: center;
+                    width: 100%;
+                }
+                .bottom-socials img {
+                    height: 50px;
+                    width: 50px;
+                    padding: 10px;
                 }
                 .info-card {
                     background: white;
+                    font-family: "Roboto", sans-serif;
                 }
                 .info {
-                    margin: 25px;
+                    padding: 0px 25px;
                 }
-                #good-me {
-                    height: 400px;
-                    width: 533px;
+                .info > p {
+                    margin: 0;
                 }
-                #young-me {
-                    height: 400px;
-                    width: 533px;
-                }
-                #walking-me {
-                    height: 400px;
-                    width: 533px;
-                }
-                // body {
-                //     background: rgb(0, 0, 0);
-                //     background: linear-gradient(
-                //         45deg,
-                //         rgba(0, 0, 0, 1) 0%,
-                //         rgba(255, 255, 255, 1) 100%
-                //     );
-                // }
-                @media (max-width: 950px) {
+                @media (max-width: 1024px) {
                     .container {
-                        flex-flow: row wrap;
+                        padding: 10px;
+                        width: 80vw;
+                        border: 1px solid red;
+                        grid-template-columns: 100%;
+                        grid-template-rows: 400px auto auto;
+                        grid-template-areas:
+                            "one"
+                            "two"
+                            "three";
                     }
-                    #good-me {
-                        height: 200px;
-                        width: 300px;
+                    .info {
+                        grid-area: two;
                     }
-                    #young-me {
-                        height: 200px;
-                        width: 300px;
+                    .info > p {
+                        margin: 16px 0px;
                     }
-                    #walking-me {
-                        height: 200px;
-                        width: 300px;
+                    .bottom-socials {
+                        grid-area: three;
+                    }
+                    .bottom-socials img {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+                @media (max-width: 400px) {
+                    .container {
+                        padding: 10px;
+                        width: 80vw;
+                        border: 1px solid red;
+                        grid-template-columns: 100%;
+                        grid-template-rows: 200px auto auto;
+                        grid-template-areas:
+                            "one"
+                            "two"
+                            "three";
+                    }
+                    .info {
+                        grid-area: two;
+                    }
+                    .info > p {
+                        margin: 16px 0px;
+                    }
+                    .bottom-socials {
+                        grid-area: three;
+                    }
+                    .bottom-socials img {
+                        height: 30px;
+                        width: 30px;
                     }
                 }
             `}</style>
