@@ -17,22 +17,22 @@ export default function docs() {
             tts: false,
             embeds: [
                 {
-                    "title": "Contactor Information:",
-                    "fields": [
+                    title: "Contactor Information:",
+                    fields: [
                         {
-                            "name": "**Name**",
-                            "value": name,
-                            "inline": false
+                            name: "**Name**",
+                            value: name,
+                            inline: false
                         },
                         {
-                            "name": "**Email**",
-                            "value": email,
-                            "inline": false
+                            name: "**Email**",
+                            value: email,
+                            inline: false
                         },
                         {
-                            "name": "**Message**",
-                            "value": message,
-                            "inline": false
+                            name: "**Message**",
+                            value: message,
+                            inline: false
                         }
                     ]
                 }
@@ -53,13 +53,13 @@ export default function docs() {
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
                 />
-                 
             </Head>
             <h1 className="title">Get in Touch</h1>
             <div className="container">
                 <div className="contact-para">
                     <p>
-                        The best way to contact me is{" "}<a href="https://twitter.com/whoisheath_">Twitter</a>.
+                        The best way to contact me is{" "}
+                        <a href="https://twitter.com/whoisheath_">Twitter</a>.
                         But, if you fill out the form, a notification will go
                         off in my own discord server and I'll get back to you as
                         quickly as possible!
@@ -82,6 +82,7 @@ export default function docs() {
                             name="firstname"
                             placeholder="Heath"
                             autoFocus
+                            required
                         />
                         <br />
                         <label for="email">Email</label>
@@ -91,6 +92,7 @@ export default function docs() {
                             type="email"
                             name="email"
                             placeholder="heath.blandford@gmail.com"
+                            required
                         />
                         <br />
                         <label for="message">Message</label>
@@ -101,9 +103,12 @@ export default function docs() {
                             rows="10"
                             cols="50"
                             placeholder="nice site dawg! want to work for us?"
+                            required
                         />
                         <br />
-                        <button type="submit">Contact Me</button>
+                        <div className="submitButton">
+                            <button type="submit">Send it!</button>
+                        </div>
                     </form>
                     <div className="bottom-socials">
                         <a href="https://www.twitter.com/whoisheath_">
@@ -130,7 +135,7 @@ export default function docs() {
                     .title {
                         font-size: 3.5em;
                         text-align: center;
-                        font-family: 'Roboto', sans-serif;
+                        font-family: "Roboto", sans-serif;
                     }
                     .container {
                         display: flex;
@@ -140,7 +145,7 @@ export default function docs() {
                     }
                     .contact-para {
                         font-size: 1.2em;
-                        font-family: 'Roboto', sans-serif;
+                        font-family: "Roboto", sans-serif;
                         margin: 50px auto;
                         border-bottom: 2px solid black;
                     }
@@ -149,33 +154,49 @@ export default function docs() {
                         border-radius: 2px;
                         padding: 75px;
                         box-shadow: 2px 2px 5px #333;
-                        font-family: 'Roboto', sans-serif;
+                        font-family: "Roboto", sans-serif;
                     }
                     .contact-form form {
                         margin-bottom: 75px;
                     }
                     .contact-form input[type="text"] {
+                        width: 250px;
                         margin-bottom: 10px;
                         border-radius: 5px;
                         padding: 10px 5px;
+                        font-family: "Roboto", sans-serif;
                     }
                     .contact-form input[type="text"]:focus {
                         outline: none;
                     }
                     .contact-form input[type="email"] {
+                        width: 250px;
                         margin-bottom: 10px;
                         border-radius: 5px;
                         padding: 10px 5px;
+                        font-family: "Roboto", sans-serif;
                     }
                     .contact-form input[type="email"]:focus {
                         outline: none;
                     }
                     .contact-form textarea {
                         padding: 10px 5px;
-                        font-family: 'Roboto', sans-serif;
+                        font-family: "Roboto", sans-serif;
                     }
                     .contact-form textarea:focus {
                         outline: none;
+                    }
+                    .contact-form button{
+                        padding: 10px 15px;
+                        margin-top: 30px;
+                        background: transparent;
+                        border: 1px solid black;
+                        font-size: 1.2em;
+                    }
+                    .contact-form button:hover {
+                        background: #666;
+                        color: white;
+                        border: 1px solid transparent;
                     }
                     .bottom-socials {
                         text-align: center;

@@ -61,22 +61,22 @@ export default function Index() {
                             <img src="twitter.svg" alt="twitter" />
                         </a>
                         <a href="https://www.linkedin.com/in/heathblandford">
-                            <img src="linkedin.svg" alt="twitter" />
+                            <img src="linkedin.svg" alt="linkedin" />
                         </a>
                         <a href="https://www.github.com/heathblandford">
-                            <img src="github.svg" alt="twitter" />
+                            <img src="github.svg" alt="github" />
                         </a>
                         <a href="https://www.last.fm/user/cloolis">
-                            <img src="lastfm.svg" alt="twitter" />
+                            <img src="lastfm.svg" alt="lastfm" />
                         </a>
                         <a href="https://www.instagram.com/whoisheath_">
-                            <img src="instagram.svg" alt="twitter" />
+                            <img src="instagram.svg" alt="instagram" />
                         </a>
                     </div>
                 </div>
             </div>
 
-            <style global jsx>{`
+            <style jsx>{`
                 .main-title {
                     font-family: "Roboto", sans-serif;
                     font-size: 3.5em;
@@ -127,13 +127,12 @@ export default function Index() {
                 .info > p {
                     margin: 0;
                 }
-                @media (max-width: 1024px) {
+                @media (max-width: 1100px) {
                     .container {
                         padding: 10px;
                         width: 80vw;
-                        border: 1px solid red;
                         grid-template-columns: 100%;
-                        grid-template-rows: 400px auto auto;
+                        grid-template-rows: 600px auto auto;
                         grid-template-areas:
                             "one"
                             "two"
@@ -153,11 +152,10 @@ export default function Index() {
                         width: 30px;
                     }
                 }
-                @media (max-width: 400px) {
+                @media (max-width: 415px) {
                     .container {
                         padding: 10px;
                         width: 80vw;
-                        border: 1px solid red;
                         grid-template-columns: 100%;
                         grid-template-rows: 200px auto auto;
                         grid-template-areas:
