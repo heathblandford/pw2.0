@@ -6,7 +6,7 @@ const Header = () => (
         <Head>
             <link
                 rel="shortcut icon"
-                href="/static/favicon.ico"
+                href="/favicon.ico"
                 type="image/x-icon"
             />
         </Head>
