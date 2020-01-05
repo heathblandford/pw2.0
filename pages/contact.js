@@ -5,7 +5,7 @@ export default function docs() {
     function handleSubmit(e) {
         e.preventDefault();
 
-        const url = process.env.DISCORD_URL;
+        const url = process.env.discord_url;
         const name = document.querySelector("#name").value;
         const email = document.querySelector("#email").value;
         const message = document.querySelector("#message").value;
