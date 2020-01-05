@@ -91,14 +91,13 @@ export default function Index() {
                     box-shadow: 2px 2px 5px #333;
                     display: grid;
                     grid-template-columns: 50% 50%;
-                    grid-template-rows: 90% 100px;
+                    grid-template-rows: 90% 10%;
                     grid-template-areas:
                         "top top"
                         "bot bot";
+                    grid-gap: 1em;
                     padding: 50px;
                     width: 50vw;
-                    min-height: 500px;
-                    margin: 20px;
                 }
                 .image > img {
                     object-fit: cover;
@@ -108,7 +107,6 @@ export default function Index() {
                 .bottom-socials {
                     text-align: center;
                     grid-area: bot;
-                    justify-self: stretch;
                     align-self: center;
                     width: 100%;
                 }

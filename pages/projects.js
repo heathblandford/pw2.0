@@ -30,7 +30,7 @@ export default function Projects() {
                     </ul>
                 </div>
                 <div className="stlwarehouse-section">
-                    <a href="#">
+                    <a href="https://github.com/heathblandford/stlwarehouse">
                         <img src="/stlwarehouse.png" alt="STLWarehouse" />
                     </a>
                     <ul>
@@ -89,6 +89,8 @@ export default function Projects() {
             <style jsx>
                 {`
                     .websites {
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 1.2em;
                         margin: 0 auto;
                         padding: 50px;
                         width: 80vw;

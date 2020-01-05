@@ -4,8 +4,7 @@ import Head from "next/head";
 export default function docs() {
     function handleSubmit(e) {
         e.preventDefault();
-        // const form = document.querySelector("#contactMeForm");
-        // const contactMeData = serialize(form, { hash: true });
+
         const url = process.env.DISCORD_URL;
         const name = document.querySelector("#name").value;
         const email = document.querySelector("#email").value;
@@ -186,7 +185,7 @@ export default function docs() {
                     .contact-form textarea:focus {
                         outline: none;
                     }
-                    .contact-form button{
+                    .contact-form button {
                         padding: 10px 15px;
                         margin-top: 30px;
                         background: transparent;
