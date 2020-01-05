@@ -1,7 +1,5 @@
 {
-    "build": {
-        "env": {
-            "DISCORD_URL": "@discord_url"
-        }
+    "env": {
+        "DISCORD_URL": "@discord_url"
     }
 }
