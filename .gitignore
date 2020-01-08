@@ -3,5 +3,6 @@
 /.next
 
 .env
+.env.build
 
-next.config.js
+# next.config.js
