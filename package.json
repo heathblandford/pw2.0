@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "now dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "deploy": "now"
+    "start": "next start"
   },
   "keywords": [],
   "author": "",

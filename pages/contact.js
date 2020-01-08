@@ -132,9 +132,10 @@ export default function docs() {
             <style jsx>
                 {`
                     .title {
-                        font-size: 3.5em;
+                        font-size: 3rem;
                         text-align: center;
                         font-family: "Roboto", sans-serif;
+                        margin-top: 50px;
                     }
                     .container {
                         display: flex;
@@ -143,10 +144,11 @@ export default function docs() {
                         padding: 0px 25px;
                     }
                     .contact-para {
-                        font-size: 1.2em;
+                        font-size: 1.2rem;
                         font-family: "Roboto", sans-serif;
                         margin: 50px auto;
                         border-bottom: 2px solid black;
+                        word-break: break-word;
                     }
                     .contact-form {
                         margin: 50px auto;
@@ -209,11 +211,29 @@ export default function docs() {
                         padding: 10px;
                     }
                     @media (max-width: 950px) {
+                        .container {
+                            padding: 0px;
+                        }
+                        .contact-para {
+                            width: 80vw;
+                            // margin: 0 auto;
+                        }
                         .contact-form {
-                            padding: 50px;
+                            padding: 30px;
+                            margin: 0 auto;
+                        }
+                        .contact-form input[type="text"]{
+                            width: 200px;
+                        }
+                        .contact-form input[type="email"] {
+                            width: 200px;
                         }
                         .contact-form textarea {
                             width: 200px;
+                        }
+                        .bottom-socials img {
+                            height: 30px;
+                            width: 30px;
                         }
                     }
                 `}
