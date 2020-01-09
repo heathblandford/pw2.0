@@ -97,7 +97,7 @@ export default function Projects() {
                         grid-gap: 30px; 
                         display: grid;
                         grid-template-columns: 50% 50%;
-                        grid-template-rows: 50% 50%;
+                        grid-template-rows: auto auto;
                         grid-template-areas:
                             "one two"
                             "three four";
