@@ -111,6 +111,7 @@ export default function Projects() {
                     @media (max-width: 700px) {
                         .websites {
                             width: 90vw;
+                            margin-top: 10px;
                             padding: 0px 3px;
                             grid-template-columns: 100%;
                             grid-template-rows: auto auto auto auto;
