@@ -113,7 +113,7 @@ export default function Projects() {
                             width: 90vw;
                             padding: 0px 3px;
                             grid-template-columns: 100%;
-                            grid-template-rows: 25% 25% 25% 25%;
+                            grid-template-rows: auto auto auto auto;
                             grid-template-areas:
                                 "one"
                                 "two"
