@@ -97,7 +97,7 @@ export default function Projects() {
                         grid-gap: 30px; 
                         display: grid;
                         grid-template-columns: 50% 50%;
-                        grid-template-rows: 50% 50%;
+                        grid-template-rows: auto auto;
                         grid-template-areas:
                             "one two"
                             "three four";
@@ -111,9 +111,10 @@ export default function Projects() {
                     @media (max-width: 700px) {
                         .websites {
                             width: 90vw;
+                            margin-top: 10px;
                             padding: 0px 3px;
                             grid-template-columns: 100%;
-                            grid-template-rows: 25% 25% 25% 25%;
+                            grid-template-rows: auto auto auto auto;
                             grid-template-areas:
                                 "one"
                                 "two"
