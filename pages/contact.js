@@ -2,15 +2,18 @@ import Layout from "../components/Layout";
 import Head from "next/head";
 
 export default function docs() {
+    // handle submit is for sending the contact form data to my discord server
     function handleSubmit(e) {
         e.preventDefault();
-
+        
+        // set globals
         const url = process.env.DISCORD_URL;
         const name = document.querySelector("#name").value;
         const email = document.querySelector("#email").value;
         const message = document.querySelector("#message").value;
+        
+        // construct the object to send to discord
         let data = {
-            // construct the object to send to discord
             content: "New Contact Alert!",
             username: "contactor",
             tts: false,
@@ -47,7 +50,7 @@ export default function docs() {
     return (
         <Layout>
             <Head>
-                <title>Contact me... or don't I don't care</title>
+                <title>Get in Touch!</title>
                 <meta
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
@@ -66,9 +69,6 @@ export default function docs() {
                 </div>
                 <div className="contact-form">
                     <form
-                        // action={``}
-                        // method="post"
-                        // target="dummyframe"
                         onSubmit={handleSubmit}
                         name="contactMeForm"
                         id="contactMeForm"
