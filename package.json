@@ -13,8 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "faker": "^4.1.0",
+    "isomorphic-fetch": "^2.2.1",
     "next": "^9.2.2",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "swr": "^0.1.18"
   }
 }

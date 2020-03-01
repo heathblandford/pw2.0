@@ -11,6 +11,7 @@ export default function Projects() {
                     content="initial-scale=1.0, width=device-width"
                 />
             </Head>
+            <h1 className="main-title">My projects</h1>
             <div className="websites">
                 <div className="disappointing-section">
                     <a href="https://quirky-mahavira-6e1270.netlify.com/">
@@ -88,13 +89,18 @@ export default function Projects() {
             </div>
             <style jsx>
                 {`
+                    .main-title {
+                        font-family: "Roboto", sans-serif;
+                        font-size: 3.5em;
+                        text-align: center;
+                    }
                     .websites {
-                        font-family: 'Roboto', sans-serif;
+                        font-family: "Roboto", sans-serif;
                         font-size: 1.2em;
                         margin: 0 auto;
                         padding: 50px;
                         width: 80vw;
-                        grid-gap: 30px; 
+                        grid-gap: 30px;
                         display: grid;
                         grid-template-columns: 50% 50%;
                         grid-template-rows: auto auto;

@@ -32,10 +32,11 @@ export default function Index() {
                             I'm a Petroleum Engineer by education (B.S. in
                             Petroluem Engineering from Marietta College in 2016){" "}
                             <br />
-                            <br />A Mechanical Design Engineer by Profession{" "}
+                            <br />I'm A Mechanical Design Engineer by Profession{" "}
                             <br />
-                            <br /> And a Web Developer by Passion.
+                            <br />I'm a Web Developer by Passion.
                         </p>
+                        <br />
                         <p>In my free time, I like to do a few things:</p>
                         <ul>
                             <li>3D Print</li>
@@ -51,9 +52,9 @@ export default function Index() {
                         <ul>
                             <li>JavaScript</li>
                             <li>NodeJS</li>
+                            <li>Python</li>
                             <li>Consumer Technology</li>
                             <li>Hip Hop and House music</li>
-                            <li>Keyboards</li>
                         </ul>
                     </div>
                     <div className="bottom-socials">
