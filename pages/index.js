@@ -32,7 +32,7 @@ export default function Index() {
                             I'm a Petroleum Engineer by education (B.S. in
                             Petroluem Engineering from Marietta College in 2016){" "}
                             <br />
-                            <br />I'm A Mechanical Design Engineer by Profession{" "}
+                            <br />I'm a Mechanical Design Engineer by Profession{" "}
                             <br />
                             <br />I'm a Web Developer by Passion.
                         </p>
